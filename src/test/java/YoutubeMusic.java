@@ -53,6 +53,8 @@ public class YoutubeMusic {
     @Then("user success play the video")
     public void assertVideoPage(){
         driver.findElement(By.cssSelector("[for='automix']")).isDisplayed();
+        driver.close();
+        driver.quit();
     }
 }
 
